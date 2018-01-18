@@ -5,7 +5,7 @@ import (
 	"upper.io/db.v3/mysql" // Imports the mysql adapter.
 	"upper.io/db.v3/lib/sqlbuilder"
 	"github.com/spf13/viper"
-	"github.com/benkauffman/harvest-db-sync/config"
+	"../config"
 )
 
 func getDatabase() (sqlbuilder.Database) {

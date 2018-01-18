@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"io/ioutil"
 	"strconv"
-	"github.com/benkauffman/harvest-db-sync/config"
-	"github.com/benkauffman/harvest-db-sync/database"
+	"../config"
+	"../database"
 )
 
 func requestClients(page int) ([]byte) {
@@ -64,6 +64,9 @@ func get(endPoint string, page int, params string) ([]byte) {
 	}
 
 	res, err := client.Do(req)
+	if err != nil {
+		log.Fatal(err)
+	}
 	defer res.Body.Close()
 
 	body, readErr := ioutil.ReadAll(res.Body)

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/benkauffman/harvest-db-sync/harvest"
-	"github.com/benkauffman/harvest-db-sync/database"
+	"./harvest"
+	"./database"
 	"log"
 )
 

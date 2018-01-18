@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"github.com/spf13/viper"
 	"log"
-	"github.com/benkauffman/harvest-db-sync/config"
+	"../config"
 )
 
 func UpdateSyncMillis() {

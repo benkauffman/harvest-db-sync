@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"log"
 	"fmt"
-	"github.com/benkauffman/harvest-db-sync/models"
+	"../models"
 )
 
 func GetAllUsers() ([]models.User) {

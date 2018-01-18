@@ -1,7 +1,7 @@
 package database
 
 import (
-	"github.com/benkauffman/harvest-db-sync/models"
+	"../models"
 	"strings"
 	"log"
 )
