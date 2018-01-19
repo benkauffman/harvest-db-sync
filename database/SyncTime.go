@@ -38,7 +38,7 @@ func GetSyncDate() (string) {
 
 	if millis > 1 {
 		var instance = time.Unix(0, millis*int64(time.Millisecond)).AddDate(0, 0, -1)
-		date = fmt.Sprintf("%d-%d-%d", instance.Year(), instance.Month(), instance.Day())
+		date = fmt.Sprintf("%d-%02d-%02d", instance.Year(), instance.Month(), instance.Day())
 	}
 
 	return date
